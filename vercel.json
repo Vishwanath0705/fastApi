@@ -5,12 +5,6 @@
         "src" : "fastApi/blog/main.py",
         "use" : "@vercel/python"
         }
-    ],
-    "routers":[
-        {
-            "src" : "/(.*)",
-            "dest" : "fastApi/blog/main.py"
-        }
     ]
 
 }
