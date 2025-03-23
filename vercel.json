@@ -1,8 +1,8 @@
 {
-    "version" : 2,
+    "version" : 3,
     "builds":[
         {
-        "src" : "fastApi/blog/main.py",
+        "src" : "blog/main.py",
         "use" : "@vercel/python"
         }
     ]
