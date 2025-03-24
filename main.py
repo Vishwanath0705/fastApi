@@ -4,6 +4,9 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "FastAPI is running!"}
 
 @app.get("/blog")
 def index(limit = 10, published: bool = True, sort:Optional[str] = None):
