@@ -8,6 +8,10 @@ from .routers import blog, user, authentication
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "FastAPI is running!"}
+
 models.Base.metadata.create_all(engine)
 
 app.include_router(authentication.router)
